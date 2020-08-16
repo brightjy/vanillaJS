@@ -1,3 +1,10 @@
+* {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .backgroundImage {
     position:absolute;
     top:0;
@@ -9,15 +16,89 @@
 }
 
 .wrap {
-    margin:0 auto;
+    margin: -200px 0px 0px -25%;
+    position: absolute;
+    top:50%;
+    left:50%;
     vertical-align: middle;
     text-align:center;
     width: 50%;
-    height:300px;
-    background-color:rgba(255, 255, 255, 0.5);
+    height:400px;
+    /* background-color:rgba(255, 255, 255, 0.5); */
 }
 
+.copyright {
+    font-size: 0.7em;
+}
 
-.js-clock h1 {
-    color:black;    
+.form, .greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+.js-clock {
+    font-size:2.0em;
+}
+
+.js-weather {
+    font-size: 2.0em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+input {
+    border:none;
+    border-bottom:2px solid white;
+    background-color: transparent;
+    margin-top: 30px;
+    box-shadow: 0px 1px 0px grey;
+    width:100%;
+    height:50px;
+    outline: none;
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+.js-greetings {
+    font-size: 2.0em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+input::placeholder {
+    color:white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+ul, li {
+    list-style: none;
+    margin-top:10px;
+    font-weight: bold;
+}
+
+.js-toDoList {
+    text-align: left;
+    /* position: absolute;
+    width:100%;
+    left:50%;
+    margin-left: -25%; */
+    font-size: 1.5em;
+    margin-top:20px;
+}
+
+button {
+    background-color:red;
+    border:0;
+    outline: 0;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+span {
+    padding-left: 10px;
 }
