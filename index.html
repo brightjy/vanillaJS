@@ -2,21 +2,49 @@
 <html>
 <head>
     <title>Something</title>
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="src/styles.css"/>
 </head>
 <body>
-    TEST
-    <div class="js-clock">
+    <div class="wrap">
+    <!-- Clock -->
+        <div class="js-clock">
+            <h1>00:00:00</h1>
+        </div>
 
-    </div>
-    <div class="js-weather">
+        <!-- Weather -->
+        <div class="js-weather">
+            
+        </div>
 
+        <!-- Name -->
+        <div class="js-name">
+            <form class="js-form form">
+                <input type="text"
+                    placeholder="What is your name?"/>
+            </form>
+        </div>
+
+        <!-- Greetings -->
+        <div class="js-greetings">
+
+        </div>
+
+        <!-- To Do  -->
+        <div class="js-toDo">
+            <form class="js-toDoForm">
+                <input type="text"
+                    placeholder="write a to do" />
+            </form>
+
+            <ul class="js-toDoList">
+
+            </ul>
+        </div>
     </div>
-    <div class="js-name">
-        <form class="js-form form">
-            <input type="text"
-                placeholder="What is your name?"/>
-        </form>
-    </div>
+    <script src="src/clock.js"></script>
+    <script src="src/greeting.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/weather.js"></script>
 </body>
 </html>
