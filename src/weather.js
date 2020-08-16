@@ -21,7 +21,7 @@ function getWeather(lat, lng)
     */
 
     /* 날씨 API로 날씨 정보 받아오기 */
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
     ).then( function(response) {
         return response.json();
     }).then( function(json) {
